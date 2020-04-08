@@ -1,0 +1,311 @@
+/* This is a page for the detailpage of the videos and text from the book */
+
+/* Every color detailpage background-color */
+.color_container {
+  background-color: #fff;
+  /* border-bottom: 1px solid #e7e2e2; */
+}
+
+/* To change the titles of the youtube videos gallery, didn't use it now */
+/* .epyt-gallery-title {
+  font-size: 104% !important;
+} */
+
+/* Top buttons */
+.buttons_container {
+  padding-top: 8rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons_container a {
+  padding: 1rem 4rem;
+  background-color: #453083;
+  color: #fff;
+  border-radius: 4rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.7s cubic-bezier(.25,.8,.25,1);
+}
+
+#videos-button {
+  color: #fff !important; 
+}
+
+#videos-button:hover {
+  transform: scale(0.95);
+}
+
+.buttons_container i {
+  color: #fff;
+}
+
+.buttons_container a:hover {
+  transform: scale(0.95);
+}
+
+/*** Alles van het coachwerkboek ***/
+
+/* Subpage for example kleur-rood/klussce/snelheid-stimuleren */
+#coach_workbook { }
+
+#coach_videos { margin-top: 2rem }
+
+#coach_videos h1 { margin-bottom: 0.5rem; }
+
+.concerns, .practice_tips, .exercices {
+  display: flex;
+  align-items: center; /* Verticaal centreren in het kaartje */
+}
+
+/* Betekenis van kleuren uit tekst boekje */
+
+/* Aandachtspunten */
+.concerns {
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-weight: bold;
+  /* background-color: red; We add a color class accordingly to the level we are in: for example: class .color_rood */
+}
+
+/* Praktijktips */
+.practice_tips {
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  color: #fff;
+  /* background-color: #fff; */
+}
+
+/* Space icons and text from left and right */
+.flex_spacer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Icons to the right side */
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exercices_title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+/* Oefeningen */
+.exercices {
+  border-radius: 1rem;
+  padding: 1rem;
+  /* background-color: #fff; */
+}
+
+/* Initatie Dubbelspel */
+.initiation_doubles {
+  /* background-color: #fff; */
+  /* border: 3px solid #ECBD33; We add a color class accordingly to the level we are in: for example: class .color_rood_dotted */
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+/*** Over ***/
+.main-title { /* We also have a main-title in a detailpage now */
+  font-family: 'Quicksand', sans-serif;
+}
+
+ul, ol {
+  padding-left: 15pt;
+}
+
+li {
+  margin-bottom: 1.7rem;
+}
+
+.underline-bold::first-letter {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.underline-normal {
+  text-decoration: underline;
+}
+
+.about-margin-bottom {
+  margin-bottom: 7.5%;
+}
+
+/* Quote we can find on: coach-met-de-m-factor */
+.quote {
+  color: #C01664;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+.border-top-quote {
+  border-top: 7.4px double #C01664;
+  padding-top: 1rem;
+  width: 210px;
+}
+
+.quote-text { margin-bottom: 0; }
+
+.border-bottom-quote {
+  border-bottom: 7.4px double #C01664;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 210px;
+}
+
+/* Ordered list items we can find on: welke-materialen-bieden-we-aan */
+.custom-orderedlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-orderedlist li {
+  counter-increment: step-counter;
+}
+
+.custom-orderedlist li::before {
+  content: counters(step-counter, ".");
+  color: #fff;
+  background-color: #C01664;
+  border-radius: 100%;
+  margin-right: 0.625rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  display: inline-block;
+}
+
+/*** Videos ***/
+.videos_flex_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-video {
+  margin-bottom: 3rem;
+  flex: 0 1 calc(50% - 1em);
+}
+
+
+/*** Kijkwijzers ***/
+
+.kijkwijzer-card {
+  display: flex;
+  flex: 0 1 calc(33.3% - 1em) ; 
+}
+
+.kijkwijzer-card a {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  /* box-shadow: 0 10px 20px #eee, 0 6px 6px #f1f1f1; */
+  transition: all 0.7s cubic-bezier(.25,.8,.25,1);
+  padding: 1rem;
+  color: #453083;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.kijkwijzer-card:hover a {
+  /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+  /* transform:translateY(-5px) */
+  transform:scale(.96)
+}
+
+/*** Nieuws ***/
+/* Future styles can be add here... */
+
+/* Ipad landscape */
+@media only screen and (max-width: 1024px) { 
+  .kijkwijzers_flex_container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .kijkwijzer-card a {
+    width: 100%;
+  }
+
+  /* Foto's op over of andere pagina's, herschalen op alle devices mooi mee nu. */
+  .about-big-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pluim-image-margin {
+    margin-bottom: 2rem !important;
+  }
+
+  .concerns img, .practice_tips img, .exercices img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Exercices images that need to be a readable width and height */
+  .exercices_image {
+    width: 50% !important;
+    height: 50% !important;
+  }
+
+  /* reflex logo en zie kijkwijzer ‘Get Fit 2 Badminton’ icon */
+  .flex_end img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+@media only screen and (max-width: 575px) { 
+  /*** Videos ***/ 
+  .single-video  {
+    flex: 0 1 calc(100% - 1em);
+  }
+
+  /*** Kijkwijzers ***/
+  .kijkwijzers_flex_container {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .kijkwijzer-card a {
+    width: 350px;
+  }
+
+  /*** Alles van het coachwerkboek ***/
+
+  .buttons_container a {
+    padding: 0.5rem 3.3rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .concerns, .practice_tips, .flex_end, .exercices { 
+    font-size: 0.8rem;
+  }
+
+  .exercices_image {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

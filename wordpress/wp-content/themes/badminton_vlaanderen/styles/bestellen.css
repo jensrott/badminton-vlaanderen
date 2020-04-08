@@ -1,0 +1,19 @@
+.bestellen_container {
+  padding-top: 8rem;
+}
+
+.buttons_container_bestellen {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.buttons_container_bestellen a {
+  padding: 1rem 4rem;
+  background: #453083;
+  color: #fff !important;
+  border-radius: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+}

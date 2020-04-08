@@ -1,0 +1,362 @@
+/* Home page */
+
+/*** Sidebuttons ***/
+
+.myButtons {
+  position: fixed;
+  top: 200px;
+  left: 50px;
+  cursor:pointer;
+  z-index: 1;
+}
+
+.myButtons div {
+  display: flex;
+  border: 2.8px solid #fff;
+  margin-top: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius:60px;
+  transition: width 400ms ease-in-out;  
+}
+.myButtons div:hover {
+  display: flex;
+	margin-top: 2rem;
+	width: 150px;
+	height: 60px;
+  border-radius:200px; 
+}
+
+/* Show text for every color when we hover, maybe remove this later if not wanted */
+.myButtons .no_show_front {
+  display: none; /* Initially don't show it */
+}
+
+.white_text { 
+  color: #9a9898 !important;
+}
+
+.myButtons div:hover .no_show_front  {
+  display: flex; /* Show the text when we hover */
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+}
+
+/* Colors */
+.wit { background-color:rgb(253, 253, 253); border: 2.5px solid #D2D2D2; }
+.geel { background-color:#ECBD33; }
+.oranje { background-color:#DB8C42; }
+.rood { background-color:#C01664; }
+.paars { background-color:#453083; }
+.blauw { background-color:#46A6A6; }
+
+/*** Video container ***/
+.video-container {
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #453083;
+}
+
+/* Video is responsive now */
+video {
+  width: 100%;
+  padding-top: 5.7rem;
+}
+
+video.loading {
+  background: #000 url(../images/spinner.gif) center center no-repeat;
+}
+
+/*** Main section ***/
+.about-section {
+  background-color: #453083;
+  padding-bottom: 2rem;
+}
+
+.about-card {
+  background: #fff;
+  color: #453083;
+  padding: 1.3rem;	
+}
+
+.about-card-title h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.about-card-title span {
+  color: #C01664;
+}
+
+.about-card-text p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#down-arrow {
+  cursor: pointer;
+}
+
+.colors-explained {
+  margin: 2rem 0;
+  color: #fff;
+}
+
+.colors-explained p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.colors-explained h5 {
+  font-size: 1.6rem;
+}
+
+/*** Carousel ***/
+
+.carousel-slider {
+  width: 100%;
+}
+
+/* Carousel buttons and arrows */
+.slick-dots {
+  bottom: 21rem;
+}
+
+.slick-arrow {
+  margin: 0 -1.2rem;
+}
+
+.carousel-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.3rem;
+  color: #453083;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.text {
+  flex: 3
+}
+
+.text .carousel-card-title h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text .carousel-card-text p {
+  flex-wrap: wrap;
+}
+
+.text .carousel-card-text .more-less {
+  color: #46A6A6;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  height:auto;
+  border-radius: 0.5rem;
+}
+
+
+/*** Section images ***/
+.about-section-with-images {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+.image_jongen {
+  width: 100%;
+  height: auto;
+}
+
+.about-section-with-image {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.about-section-with-image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section-with-image-item h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #453083;
+}
+
+.about-section-with-image-item img {
+  display: flex;
+  width: auto;
+  height: 209px;
+}
+
+.about-section-with-image-item.order-button {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.about-section-with-image-item.order-button h1 {
+  margin-bottom: 3rem;
+}
+
+.about-section-with-image-item.order-button .bestel-button {
+  padding: 1rem 4rem;
+  background: #453083;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4rem;
+}
+
+.about-section-with-image-item.order-button .bestel-button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#back-button {
+  padding: 1rem 4rem;
+  background: #453083;
+  border-radius: 4rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-section-with-image-item-back-button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.duurzame_motivatie p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1380px) {
+  .myButtons {
+    left: 11px;
+  }
+
+  .myButtons div {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 1199px) { 
+
+  .colors-explained h5 {
+    font-size: 1.5rem;
+  }
+
+  .colors-explained p {
+    font-size: 1rem;
+  }
+
+  .duurzame_motivatie p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 991px) { 
+  .image_jongen {
+    margin-bottom: 1rem;
+  }
+} 
+
+/* On Mobile */
+@media only screen and (max-width: 768px) { 
+
+  .video-container { background-color: #fff; }
+
+  .about-card-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .text .carousel-card-title h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Don't show sidebuttons on mobile */
+  .myButtons {
+    display: none;
+  }
+
+  .about-section-with-image-item h1 {
+    font-size: 1.7rem;
+  }
+
+  .about-section-with-image-item {
+    flex: 0 0 100%;
+    margin-bottom: 1.8rem;
+    justify-content: flex-start;
+  }
+
+  .title-container-right {
+    margin-left: auto;
+  }
+
+  .about-section-with-image-item img {
+    width: 100%;
+    height: 209px;
+  }
+
+  .image_jongen {
+    margin-bottom: 2rem;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .carousel-card {
+    margin: 1.4rem;
+  }
+
+  .colors-explained {
+    margin: 2rem 0.5rem;
+  }
+
+  .colors-explained p {
+		font-size: 0.9rem;
+	}
+
+	.colors-explained h5 {
+		font-size: 1.1rem;
+  }
+  
+  .duurzame_motivatie h1 {
+    margin-bottom: 2rem;
+  }
+
+  .duurzame_motivatie p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin: 1rem;
+  }
+}

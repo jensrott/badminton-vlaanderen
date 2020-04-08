@@ -1,0 +1,283 @@
+/* Page for a color: for example rood, groen, blauw */
+
+
+/* CSS Grid and Flexbox */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	padding-top: 8rem;
+}
+
+.back_arrow_container {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+	margin: 1rem 1rem;
+	color: #fff;
+	/* background-color:#e7e5e5; */
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	cursor: pointer;
+}
+
+.back_arrow_container:hover {
+	/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+	/* transform:translateY(-5px) */
+	transform: scale(0.96)
+}
+
+/* Buttons clicked, left side */
+.myButtons_clicked {
+	grid-column: 1 / 2;
+  grid-row: 2 / 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	font-size: 17px;
+	text-decoration:none;
+	margin: 1rem 0;
+}
+  
+.myButtons_clicked button {
+	margin-top: 10px;
+	width: 150px;
+	height: 60px;
+	border-radius:200px;
+	cursor: pointer;
+	border: none;
+	border: 2px solid #e7e5e5;
+	color: #fff;
+	transition: all 400ms ease-in-out;
+}
+  
+.myButtons_clicked button.active {
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 150px;
+	height: 60px;
+	border-radius:200px;
+	cursor: pointer;
+}
+
+.myButtons_clicked button:hover {
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 150px;
+	height: 60px;
+	border-radius:200px;
+	cursor: pointer;
+}
+
+/* Middle */
+.wrapper {
+	grid-column: 2 / 12;
+	grid-row: 2 / 3;
+
+	/* Has it's own grid for the boxes */
+	display: grid;
+  grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+	grid-template-rows: repeat(2, 1fr); 
+	grid-auto-flow: column;
+	margin: 1rem 2rem;
+
+}
+	
+	/* Colors for each page, made them classes for easier usage */
+ 	.color_wit {
+		background-color: #FFF;
+		color: #453083 !important; /* Needed because is also white standard */
+	}
+	.color_geel {
+		background-color: #ECBD33; 
+	}
+	.color_oranje {
+		background-color: #DB8C42;
+	}
+	.color_rood {
+		background-color: #C01664;
+	}
+	.color_paars {
+		background-color: #453083;
+	}
+	.color_blauw {
+		background-color: #46A6A6;
+	}
+
+	/* for initiation_doubles class */
+	.color_geel_dotted {
+		border: 3px dotted #ECBD33;
+	} 
+
+	.color_oranje_dotted {
+		border: 3px dotted #DB8C42;
+	} 
+
+	.color_rood_dotted {
+		border: 3px dotted #C01664;
+	} 
+
+	.color_paars_dotted {
+		border: 3px dotted #453083;
+	} 
+
+	.color_blauw_dotted {
+		border: 3px dotted #46A6A6;
+	} 
+
+	.one,.two,.three,.four,.five,.six,.seven,.eight {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		/* box-shadow: 0 10px 20px #eee, 0 6px 6px #f1f1f1; */
+		transition: all 0.7s cubic-bezier(.25,.8,.25,1);
+		border-radius: 20px;
+		width: auto;
+		height: 100%;
+		padding: 2rem;
+	}
+
+	.no_show {
+		color: #fff;
+	}
+
+	.white {
+		color: #9a9898;
+	}
+
+	.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover {
+		/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+		/* box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.06); */
+		/* transform: scale(.98); */
+		/* box-shadow: 0 10px 20px #eee, 0 6px 6px #d5d5d5; */
+		transform:scale(.96)
+	}
+
+	.question_mark_container {
+		grid-column: 11 / 12;
+		grid-row: 1 / 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 4rem;
+		margin: 1rem;
+		color: #fff;
+		/* background-color:#e7e5e5; */
+		border-radius: 100%;
+		width: 100px;
+		height: 100px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		cursor: pointer;
+	}
+
+	.question_mark_container:hover {
+		/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+		/* transform:translateY(-5px) */
+		transform: scale(0.96)
+	}
+
+	/* Media queries for every screen type */
+	@media only screen and (max-width: 1414px) { 
+		/* Show the buttons back */
+		.myButtons_clicked {
+			grid-column: 4 / 10;
+			grid-row: 1 / 2;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		/* Make them circles */
+		.myButtons_clicked button {
+			width: 50px;
+			height: 50px;
+			border-radius:100%;
+			cursor: pointer;
+			border: 2px solid #e7e5e5;
+			padding: 0 !important;
+			margin: 0 0.2rem !important; 
+		}
+
+		.myButtons_clicked button.active {
+			margin-top: 1rem;
+			padding: 0;
+			width: 50px;
+			height: 90px;
+		}
+
+		.myButtons_clicked button:hover {
+			width: 50px;
+			height: 90px;
+		}
+
+		.no_show { /* Dont' show the text when the circles come */
+			display: none;
+		}
+
+		.wrapper {
+			grid-template-columns: repeat(auto-fit, minmax(130px, 3fr));
+			text-align: center;
+		}
+
+		.back_arrow_container,.question_mark_container {
+			font-size: 3rem;
+			width: 80px;
+			height: 80px;
+		}
+	} 
+
+	@media only screen and (max-width: 808px) {
+		/* Show the buttons back */
+		.myButtons_clicked {
+			grid-column: 4 / 10;
+			grid-row: 1 / 2;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+		}
+
+		.wrapper {
+			grid-template-columns: repeat(auto-fit, minmax(120px, 3fr));
+			text-align: center;
+		}
+
+		.back_arrow_container,.question_mark_container { 
+			font-size: 2rem;
+			width: 60px;
+			height: 60px;
+		}
+	}
+	
+	@media only screen and (max-width: 640px) {  
+		/* Show the buttons back */
+		.myButtons_clicked {
+			grid-column: 3 / 11;
+			grid-row: 1 / 2;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+		}
+
+		.wrapper { /* Cards under eachother when resposive */
+			display: flex;
+			flex-wrap: wrap; 
+		}
+
+		.one,.two,.three,.four,.five,.six,.seven,.eight {
+			margin: 1rem 0;
+			width: 100% !important;
+		}
+	}
+  

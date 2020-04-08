@@ -1,0 +1,50 @@
+/*
+Theme Name: Badminton Vlaanderen
+Authors: Jens Rottiers, Thor Boonaert
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: badmintonvlaanderen
+*/
+
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700'); /* For titels and header and footer */
+
+/* Titillium */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700'); /* For text */
+
+body {
+  line-height: 1.6;
+  background-color: #fff; 
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+  color: #453083;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+span {
+  font-weight: bold;
+  color: #453083;
+}
+
+/* To keep the footer always on the bottom of every page */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+#content-wrap {
+  padding-bottom: 8.5rem;  /* Footer height */
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8.5rem;  /* Footer height */
+}

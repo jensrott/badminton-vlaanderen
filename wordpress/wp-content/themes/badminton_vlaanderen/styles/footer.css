@@ -1,0 +1,152 @@
+footer {
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+footer a {
+	cursor: pointer;
+	color: inherit;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+.footer_red {
+	background-color: #C01664;
+	font-weight: bold;
+	font-size: 2rem;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_red img {
+	margin-left: 1rem;
+	border-radius: 0;
+	cursor: pointer;
+	width: 288px;
+	height: auto;
+}
+
+.footer_purple {
+	background-color: #453083;
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.footer_three {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_three a img {
+	width: 106px;
+	height: auto;
+	border-radius: 0; /* No corners */
+	margin-left: 0.5rem;
+}
+
+.footer_ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.left_side {
+	flex-direction: row;
+	align-items: center;
+	display: flex;
+	font-weight: bold;
+}
+
+.yonex_logo {
+	width: 100px;
+	height: auto;
+	margin-left: auto;
+	border-radius: 0;
+}
+
+.right_side {
+	flex-direction: row;
+	align-items: center;
+	display: flex;
+	margin-left: auto;
+}
+
+.footer_li {
+	padding: 1.5rem;
+	margin: 0;
+}
+
+.footer_li a {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.bold-link { font-weight: bold; }
+
+.footer_green {
+	background-color: #46A6A6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+/* On Mobile */
+@media only screen and (max-width: 768px) { 
+	.footer_red {
+		font-size: 1.5rem;
+	}
+	/* Show only social icons on mobile */
+	.footer_ul, .footer_three {
+		justify-content: center;
+	}
+
+	.right_side {
+		margin: 0;
+	}
+
+	.small_screen_footer {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 575px) { 
+	.footer_red {
+		font-size: 1rem;
+	}
+
+	.footer_red img {
+		width: 98px;
+		height: auto;
+	}
+
+	.footer_li a {
+		font-size: 1.2rem;
+	}
+
+	.footer_green {
+		font-size: 0.7rem;
+	}
+}
+
+/* Iphone 5 */
+@media only screen and (max-width: 380px) {
+	.footer_red {
+		font-size: 0.7rem;
+	}
+
+	.footer_green {
+		font-size: 0.6rem;
+	}
+
+	.footer_red img {
+		width: 87px;
+		height: auto;
+	}
+}

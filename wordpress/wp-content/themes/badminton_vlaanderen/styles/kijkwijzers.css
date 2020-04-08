@@ -1,0 +1,8 @@
+/* Kijkwijzers subpage */
+
+.kijkwijzers_flex_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2.5rem 0; 
+}

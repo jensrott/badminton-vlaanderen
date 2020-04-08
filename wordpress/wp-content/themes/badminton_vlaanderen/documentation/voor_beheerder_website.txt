@@ -1,0 +1,31 @@
+/*** Voor de beheerder van de website in de toekomst: ***/
+
+Structuur van kleuren pagina's is:
+
+algemene kleur pagina dan subpage dan detailpage of detailpagina
+detailpagina en detailpage is hetzelfde. Benaming is gewoon klein beetje anders
+
+Voorbeeld:
+/kleur-geel -> Gebruikt de template: Kleur-geel -> filename: kleur-geel.php -> parent: geen
+/kleur-geel/klussce -> Gebruikt de template: Kleur geel subpagina Klussce -> filename: kleur-geel_subpage_klussce.php -> parent: kleur-geel
+/kleur-geel/hard-en-ver-bovenhands-werpen-uit-stilstand/ -> Gebruikt de template: Kleur geel detailpagina Klussce -> kleur-geel_detailpagina_klussce.php 
+-> parent: Klusce
+
+Parent toevoegen is ook belangrijk. Anders werkt het linken niet correct!
+Link is dan: https://www.shuttlekids.org/kleur-geel/klussce/hard-en-ver-bovenhands-werpen-uit-stilstand
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Structuur van Over pagina's:
+
+Over heeft geen subpagina's dus enkel detailpagina's
+
+Voorbeeld: 
+/wat-is-het -> Gebruikt de template: Over Wat detailpagina -> filename: over-wat_detailpagina.php
+
+Dit is hetzelfde voor de Nieuws, SKD, Bestellen en Videos pagina's.
+Er zijn geen detailpagina's dus zijn het enkel subpagina's.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aanvullen van de documentatie mag zeker...
